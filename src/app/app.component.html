@@ -1,0 +1,4 @@
+<div>{{ money | currency:'JPY':'symbol' }}</div>
+<div>{{ transformedMoney }}</div>
+<div>{{ money | currency:'JPY':'' }}円</div>
+<input type="text" [(ngModel)]="money" (change)="moneyChanged()">
